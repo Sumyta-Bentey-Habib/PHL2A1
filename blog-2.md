@@ -6,12 +6,12 @@ Object-Oriented Programming (OOP) helps structure large applications by organizi
 
 ---
 
-## Encapsulation
+## 1. Encapsulation
 
 Encapsulation means keeping data and logic inside a class and restricting direct access.
 
 ### 🧩 Code Template
-```ts
+```typescript
 class User {
   private password: string;
 
@@ -23,13 +23,14 @@ class User {
     return this.password;
   }
 }
+```
 
-## Inheritance
+## 2. Inheritance
 
 Reuses common code → avoids duplication.
 
 ### 🧩 Code Template
-``ts
+```typescript
 class Animal {
   move() {
     return "Moving";
@@ -41,11 +42,14 @@ class Dog extends Animal {
     return "Woof";
   }
 }
+```
 
-## Polymorphism
-  Same method, different behavior → removes messy conditionals.
+## 3. Polymorphism
+
+Same method, different behavior → removes messy conditionals.
+
 ### 🧩 Code Template
-``ts
+```typescript
 class Shape {
   area(): number {
     return 0;
@@ -57,12 +61,14 @@ class Circle extends Shape {
     return 3.14 * 10 * 10;
   }
 }
+```
 
-## Abstraction
+## 4. Abstraction
+
 Hides complex logic, exposes only what’s needed → simplifies large systems.
 
 ### 🧩 Code Template
-``ts
+```typescript
 interface Payment {
   pay(amount: number): void;
 }
@@ -72,6 +78,9 @@ class Stripe implements Payment {
     console.log("Paid via Stripe:", amount);
   }
 }
+```
+
+---
 
 ## 🔥 Result
 Together, they make code:
@@ -79,3 +88,4 @@ Together, they make code:
 - Easier to maintain
 - Easier to scale
 - Less complex
+```
